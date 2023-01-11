@@ -1,0 +1,22 @@
+{
+  "name": "chatgpt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx ./src/main.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tsx": "^3.12.2"
+  },
+  "dependencies": {
+    "chatgpt": "^3.3.12",
+    "dotenv": "^16.0.3",
+    "openai": "^3.1.0",
+    "puppeteer": "^19.5.0"
+  }
+}
