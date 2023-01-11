@@ -1,9 +1,7 @@
 import { ICompresion, ISetup } from "@/interface"
-//import { ChatGPT } from '@/providers/chatgpt'
-import { DaVinci } from "./providers/davinci"
 
 export class AICompletion implements ICompresion {
-	constructor(protected client: ISetup = new DaVinci()) {}
+	constructor(protected client: ISetup) {}
 
 	async createCustomTemplate(message: string): Promise<string> {
 		return await this.client.createCompletion(message)
